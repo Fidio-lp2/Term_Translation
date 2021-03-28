@@ -4,7 +4,7 @@ import sys
 
 def main():
 
-    with open('Term_Translation_data.json', mode='rt', encoding='utf-8') as file:
+    with open('Term_Translation_Assets/Term_Translation_data.json', mode='rt', encoding='utf-8') as file:
         data = json.load(file)
 
         text = sys.argv[1]
@@ -54,7 +54,7 @@ def reinsert(data, source, target):
     data['status']['source'] = source
     data['status']['target'] = target
 
-    with open('Term_Translation_data.json', 'w') as f:
+    with open('Term_Translation_Assets/Term_Translation_data.json', 'w') as f:
         json.dump(data, f, indent=4)
 
 if __name__ == '__main__':
