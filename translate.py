@@ -1,3 +1,4 @@
+#!/Users/fidio/.pyenv/shims/python
 import requests
 import json
 import sys
