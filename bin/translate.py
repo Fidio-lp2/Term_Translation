@@ -5,7 +5,7 @@ import sys
 
 def main():
 
-    with open('Term_Translation_Assets/Term_Translation_data.json', mode='rt', encoding='utf-8') as file:
+    with open('~/Dev/Term_Translation/Term_Translation_Assets/Term_Translation_data.json', mode='rt', encoding='utf-8') as file:
         data = json.load(file)
 
         text = sys.argv[1]
